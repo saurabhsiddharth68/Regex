@@ -18,5 +18,9 @@ public class RegisterationMain {
         System.out.println("Enter the email id");
         String eMail = sc.next();
         ur.emailId(eMail);
+
+        System.out.println("Enter the Phone Number");
+        String pNo = sc.next();
+        ur.phoneNumber(pNo);
     }
 }

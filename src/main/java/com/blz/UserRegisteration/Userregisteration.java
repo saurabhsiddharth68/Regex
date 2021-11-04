@@ -35,4 +35,15 @@ public class Userregisteration {
         }
         return emailId;
     }
+    public String phoneNumber(String phoneNumber) {
+        Pattern pattern = Pattern.compile("^(\\d{1,2}?)[- .]?\\d{9,10}$");
+        Matcher match = pattern.matcher(phoneNumber);
+        if(match.find() && match.group().equals(phoneNumber)) {
+            System.out.println("valid phoneNumber");
+        }
+        else {
+            System.out.println("invalid phoneNumber");
+        }
+        return phoneNumber;
+    }
 }
