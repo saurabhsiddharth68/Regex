@@ -14,5 +14,9 @@ public class RegisterationMain {
         System.out.println("Enter the last name: ");
         String lName = sc.next();
         ur.lastName(lName);
+
+        System.out.println("Enter the email id");
+        String eMail = sc.next();
+        ur.emailId(eMail);
     }
 }

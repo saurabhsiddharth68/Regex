@@ -24,4 +24,15 @@ public class Userregisteration {
         }
         return lastName;
     }
+    public String emailId(String emailId) {
+        Pattern pattern = Pattern.compile("^[a-zA-Z0-9+_.-]*[a-zA-Z0-9]?@[a-zA-Z0-9]+.([.][a-zA-Z]+)+$");
+        Matcher match = pattern.matcher(emailId);
+        if(match.find() && match.group().equals(emailId)) {
+            System.out.println("valid Email");
+        }
+        else {
+            System.out.println("invalid Email");
+        }
+        return emailId;
+    }
 }
