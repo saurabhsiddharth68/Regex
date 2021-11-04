@@ -10,5 +10,9 @@ public class RegisterationMain {
         System.out.println("Enter the first name: ");
         String fName = sc.next();
         ur.firstName(fName);
+
+        System.out.println("Enter the last name: ");
+        String lName = sc.next();
+        ur.lastName(lName);
     }
 }

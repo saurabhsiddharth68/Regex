@@ -13,4 +13,15 @@ public class Userregisteration {
             System.out.println("invalid FirstName");
         }
     }
+    public String lastName(String lastName) {
+        Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2,}$");
+        Matcher match = pattern.matcher(lastName);
+        if(match.find() && match.group().equals(lastName)) {
+            System.out.println("valid LastName");
+        }
+        else {
+            System.out.println("invalid lastName");
+        }
+        return lastName;
+    }
 }
