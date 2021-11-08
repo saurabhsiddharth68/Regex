@@ -46,4 +46,14 @@ public class Userregisteration {
         }
         return phoneNumber;
     }
+    public String passwordRule1(String password) {
+        Pattern pattern = Pattern.compile("^[a-z]{8,}$");
+        Matcher match = pattern.matcher(password);
+        if (match.find() && match.group().equals(password)) {
+            System.out.println("Valid Password");
+        } else {
+            System.out.println("Invalid password");
+        }
+        return password;
+    }
 }

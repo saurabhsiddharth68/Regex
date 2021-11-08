@@ -22,5 +22,9 @@ public class RegisterationMain {
         System.out.println("Enter the Phone Number");
         String pNo = sc.next();
         ur.phoneNumber(pNo);
+
+        System.out.println("Enter the Password Rule 1");
+        String password = sc.next();
+        ur.passwordRule1(password);
     }
 }
