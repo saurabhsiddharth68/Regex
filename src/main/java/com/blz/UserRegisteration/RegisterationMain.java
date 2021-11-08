@@ -23,7 +23,7 @@ public class RegisterationMain {
         String pNo = sc.next();
         ur.phoneNumber(pNo);
 
-        System.out.println("Enter the Password Rule 1");
+        System.out.println("Enter the Password");
         String password = sc.next();
         ur.passwordRule1(password);
     }

@@ -56,4 +56,14 @@ public class Userregisteration {
         }
         return password;
     }
+    public String passwordRule2(String password){
+        Pattern pattern = Pattern.compile("^[a-z](?=.*[A-Z]+).{8,}$");
+        Matcher match = pattern.matcher(password);
+        if (match.find() && match.group().equals(password)) {
+            System.out.println("Valid Password");
+        }else {
+            System.out.println("Invalid Password");
+        }
+        return password;
+    }
 }
